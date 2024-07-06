@@ -227,6 +227,40 @@ section{
     line-height: 1.8;
     margin-bottom: 25px;
 }
+/* Add this CSS to style the 'Read More' in Services section similar to 'More About' in About Me section */
+.services-content .box {
+    position: relative;
+    padding-bottom: 60px; /* Adjust to accommodate 'Read More' */
+}
+
+.services-content .box details {
+    margin-top: 10px;
+}
+
+.services-content .box summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--main-color); /* You can change this color to match your design */
+}
+
+.services-content .box summary:hover {
+    text-decoration: underline;
+}
+
+.services-content .box details p {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/* Optional: Style the disclosure arrow */
+.services-content .box details[open] summary:before {
+    content: "▼ ";
+}
+
+.services-content .box summary:before {
+    content: "▶ ";
+}
+
 .box:hover{
     transform: translateY(-8px);
     cursor: pointer;
