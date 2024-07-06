@@ -273,7 +273,7 @@ section{
     margin-bottom: 15px;
 }
 .layer p{
-    color: var(--second-color);
+    color: var(#202020);
     font-size: 1 rem;
     line-height: 1.8;
 }
